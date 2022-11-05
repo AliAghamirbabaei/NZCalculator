@@ -1,19 +1,21 @@
 public enum Operator {
-    ADDITION(1),
-    SUBTRACTION(2),
-    MULTIPLICATION(3),
-    DIVISION(4),
-    POW(5);
+    ADDITION(1, "+"),
+    SUBTRACTION(2, "-"),
+    MULTIPLICATION(3, "*"),
+    DIVISION(4, "/"),
+    POW(5, "*");
 
     public final int id;
+    public final String sign;
 
-    Operator(int id) {
+    Operator(int id, String sign) {
         this.id = id;
+        this.sign = sign;
     }
 
     @Override
     public String toString() {
-        return Integer.toString(id);
+        return id + ". " + sign;
     }
 
     public static Operator findById(int id) {
