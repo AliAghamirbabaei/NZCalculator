@@ -9,6 +9,7 @@ public class CalculatorController {
         Input input = new Input("Please enter a number: ");
         double number = input.getNumber();
 
+        Operator.printItems();
         Operator selectedOperator = selectOperator();
         if (selectedOperator != null) {
             double result = calculate(selectedOperator, number);
@@ -17,7 +18,6 @@ public class CalculatorController {
     }
 
     private static Operator selectOperator() {
-        Operator.printItems();
         Input input = new Input("Please select a operator: ");
         return Operator.findById((int) input.getNumber());
     }
@@ -27,27 +27,27 @@ public class CalculatorController {
             case ADDITION -> {
                 Input input = new Input("Please enter second number: ");
                 double numberB = input.getNumber();
-                return Calculate.sum(numberA , numberB);
+                return Calculate.sum(numberA, numberB);
             }
             case SUBTRACTION -> {
                 Input input = new Input("Please enter second number: ");
                 double numberB = input.getNumber();
-                return Calculate.minus(numberA , numberB);
+                return Calculate.minus(numberA, numberB);
             }
             case MULTIPLICATION -> {
                 Input input = new Input("Please enter second number: ");
                 double numberB = input.getNumber();
-                return Calculate.multiple(numberA , numberB);
+                return Calculate.multiple(numberA, numberB);
             }
             case DIVISION -> {
                 Input input = new Input("Please enter second number: ");
                 double numberB = input.getNumber();
-                return Calculate.division(numberA , numberB);
+                return Calculate.division(numberA, numberB);
             }
             case POW -> {
                 Input input = new Input("Please enter second number: ");
                 double numberB = input.getNumber();
-                return Calculate.pow(numberA , numberB);
+                return Calculate.pow(numberA, numberB);
             }
         }
         return 0;
