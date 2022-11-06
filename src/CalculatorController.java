@@ -1,6 +1,6 @@
 import Helper.Operator;
-import IO.*;
 import Model.Calculate;
+import IO.*;
 
 public class CalculatorController {
 
