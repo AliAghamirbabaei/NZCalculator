@@ -1,6 +1,6 @@
 import Helper.Operator;
-import IO.*;
 import Model.Calculate;
+import IO.*;
 
 public class CalculatorController {
 
@@ -49,6 +49,6 @@ public class CalculatorController {
                 return Calculate.pow(numberA, numberB);
             }
         }
-        return 0;
+        return Double.NaN;
     }
 }
