@@ -1,10 +1,13 @@
 package Helper;
+
+import IO.Output;
+
 public enum Operator {
     ADDITION(1, "+"),
     SUBTRACTION(2, "-"),
     MULTIPLICATION(3, "*"),
     DIVISION(4, "/"),
-    POW(5, "*");
+    POW(5, "^");
 
     public final int id;
     public final String sign;
@@ -29,7 +32,7 @@ public enum Operator {
     public static void printItems() {
         Operator[] items = Operator.values();
         for (Operator item : items) {
-            System.out.println(item);
+            Output.println(item);
         }
     }
 }
