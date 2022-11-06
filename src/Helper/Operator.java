@@ -1,4 +1,7 @@
 package Helper;
+
+import IO.Output;
+
 public enum Operator {
     ADDITION(1, "+"),
     SUBTRACTION(2, "-"),
@@ -29,7 +32,7 @@ public enum Operator {
     public static void printItems() {
         Operator[] items = Operator.values();
         for (Operator item : items) {
-            System.out.println(item);
+            Output.println(item);
         }
     }
 }
