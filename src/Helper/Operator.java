@@ -1,3 +1,4 @@
+package Helper;
 public enum Operator {
     ADDITION(1, "+"),
     SUBTRACTION(2, "-"),
