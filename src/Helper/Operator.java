@@ -1,5 +1,4 @@
 package Helper;
-
 import IO.Output;
 
 public enum Operator {
@@ -12,7 +11,6 @@ public enum Operator {
     COS(7, "Cos"),
     TAN(8, "Tan"),
     DEGREE_TO_RADIAN(9, "Degree To Radian");
-
 
     public final int id;
     public final String sign;
