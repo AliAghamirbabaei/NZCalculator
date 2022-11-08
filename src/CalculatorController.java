@@ -48,6 +48,18 @@ public class CalculatorController {
                 double numberB = input.getNumber();
                 return Calculate.pow(numberA, numberB);
             }
+            case SIN -> {
+                return Calculate.sin(numberA);
+            }
+            case COS -> {
+                return Calculate.cos(numberA);
+            }
+            case TAN -> {
+                return Calculate.tan(numberA);
+            }
+            case DEGREE_TO_RADIAN -> {
+                return Calculate.degreeToRadians(numberA);
+            }
         }
         return Double.NaN;
     }

@@ -7,7 +7,12 @@ public enum Operator {
     SUBTRACTION(2, "-"),
     MULTIPLICATION(3, "*"),
     DIVISION(4, "/"),
-    POW(5, "^");
+    POW(5, "^"),
+    SIN(6, "Sin"),
+    COS(7, "Cos"),
+    TAN(8, "Tan"),
+    DEGREE_TO_RADIAN(9, "Degree To Radian");
+
 
     public final int id;
     public final String sign;
